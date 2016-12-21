@@ -52,9 +52,8 @@ function permAlone(str) {
      arr[b] = tmp;   
    }
 
-  //Reverse array to get the exact arrays and slice them!
-  var lastArr =  result.reverse().slice(0,numPerms);
-  return lastArr;
+ 
+  return result.slice(result.length-numPerms, result.length);
   
 }
 
